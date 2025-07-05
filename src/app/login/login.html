@@ -1,0 +1,41 @@
+<!-- Phase 1 -->
+<div class="outer">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">Login</h3>
+                    </div>
+                    <!-- End of phase 1 -->
+                    <!-- Phase 2 -->
+                    <div class="panel-body p-3">
+                        <form>
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input type="text" placeholder="Usernmae">
+                                </div>
+                                <div class="input-field">
+                                    <span class="fa fa-lock p-2"></span>
+                                    <input type="password" placeholder="Password">
+                                    <span (click)="hidenShowPass()" class="fa fa-eye-slash p-2"></span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form-inline fr mt-4">
+                            <a id="forget" class="font-weight-bold">Forget Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mt-4 w-100">Login</button>
+                        <div class="text-center pt4 text-muted">Don't have an account?<a id="forget"
+                                routerLink="/signup" class="font-weight-bold">Sign Up</a></div>
+
+                        <!-- End of phase 2 -->
+                        <!-- Phase 3 coding file scss -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
