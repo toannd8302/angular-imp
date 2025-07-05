@@ -7,14 +7,15 @@ import { Component } from '@angular/core';
   styleUrl: './login.scss',
 })
 export class Login {
-  type: string = "password";
+  type: string = 'password';
   isText: boolean = false;
-  eyeIcon: string = "fa-eye-slash";
+  eyeIcon: string = 'fa-eye-slash';
   constructor() {}
   hidenShowPass() {
     this.isText = !this.isText; // Toggle the boolean value
     // Change the icon based on the boolean value
-    this.type ? this.eyeIcon = "fa-eye" : this.eyeIcon = "fa-eye-slash"; 
-     // Toggle the input type
-    this.isText ? this.type = "text" : this.type = "password";
+    this.eyeIcon = this.isText ? 'fa-eye' : 'fa-eye-slash';
+    // Toggle the input type
+    this.type = this.isText ? 'text' : 'password';
+  }
 }

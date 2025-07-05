@@ -19,19 +19,32 @@
                                 <div class="input-field">
                                     <span class="fa fa-lock p-2"></span>
                                     <input type="password" placeholder="Password">
-                                    <span (click)="hidenShowPass()" class="fa fa-eye-slash p-2"></span>
+                                    <span (click)="hidenShowPass()" class="fa {{eyeIcon}}"></span>
                                 </div>
                             </div>
+                            <div class="form-inline fr mt-4">
+                                <a id="forget" class="font-weight-bold">Forget Password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block mt-4 w-100">Login</button>
+                            <div class="text-center pt4 text-muted">Don't have an account?<a id="forget"
+                                    routerLink="/signup" class="font-weight-bold">Sign Up</a></div>
+                            <!-- End of phase 2 -->
+                            <!-- Phase 3 coding file scss -->
                         </form>
-                        <div class="form-inline fr mt-4">
-                            <a id="forget" class="font-weight-bold">Forget Password?</a>
+                    </div>
+                    <div class="mx-3 my-2 py-2 border">
+                        <!-- Link icon Google, GitHub, Facebook -->
+                        <div class="text-center py-1">
+                            <a href="https://www.google.com/" target=""><img
+                                    src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
+                                    alt=""></a>
+                            <a href="https://www.github.com/"><img
+                                    src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png"
+                                    alt=""></a>
+                            <a href="https://www.facebook.com/"><img
+                                    src="https://www.dpreview.com/files/p/articles/4698742202/facebook.jpeg" alt="">
+                            </a>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block mt-4 w-100">Login</button>
-                        <div class="text-center pt4 text-muted">Don't have an account?<a id="forget"
-                                routerLink="/signup" class="font-weight-bold">Sign Up</a></div>
-
-                        <!-- End of phase 2 -->
-                        <!-- Phase 3 coding file scss -->
                     </div>
 
                 </div>
